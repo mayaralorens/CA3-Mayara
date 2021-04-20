@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
-    
+    <title>Home</title>
+
+
+    <!--The next step is my bootstrap link. Source: www.bootstrapcdn.com-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--Now I am going to add my CSS and Javascript links so my files 
+    get all connected by using Link:css and and script: src-->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+
 </head>
 <body>
-    <h1>hi </h1>
+    <!--A div that encompasses all content-->
+
+    <div class="container">
+        <br>
+         <!--Bootstrap to add 2 unequal columns - basic grid --->
+        <div class="container-fluid">
+            
+            <div class="row">
+              <div class="col-sm-4"></div>
+              <div class="col-sm-8">
+            
+          
+        <!--Form extracted from w3Schools. Validation form BS4-->
+        <h2><img src="img/staff portal.webp" alt="staff"></h2>
+      
+        <div class="container-fluid">
+        <form action="/action_page.php" class="was-validated">
+          <div class="form-group">
+            <label for="uname">Username:</label>
+            <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" pattern ="[0-8]" id="pwd"  placeholder="Enter password" name="pswd" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+          
+          <button type="submit" class="btn btn-danger">Submit</button>
+        </form>
+    </div>
+    </div>
+    </div>
+    </div>
 </body>
 </html>

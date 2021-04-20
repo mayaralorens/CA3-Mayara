@@ -1,0 +1,37 @@
+body{
+    /*I am going to use css to establish my font features and
+    the colors of my website */
+    font-family: 'Times New Roman', Times, serif;
+    font-size:large;
+    background-image: url(../img/burger-gif.gif);
+    background-repeat: repeat;
+    color: black;
+    /* To show scrollbar */
+    overflow: scroll;   
+    
+}
+
+div.container{
+    background-color: red;
+    
+} 
+div.col-sm-4 {
+    
+    border: 2px solid black;
+  
+    background-image: url(../img/may.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    
+}
+div.col-sm-8 {
+    border: 2px solid black;
+    background-color: white;
+    text-align: center;
+}
+div.container-fluid{
+    padding-bottom: 5%;
+    padding-top: 5%; 
+    position: relative;
+}
